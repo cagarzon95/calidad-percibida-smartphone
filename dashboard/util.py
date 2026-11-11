@@ -11,6 +11,14 @@ from textos import FEATURE_LABEL
 BOLD_FONT = "C:/Windows/Fonts/arialbd.ttf"
 
 
+def bold_font(size: int):
+    """Fuente en negrita de Windows si existe; si no, la fuente que trae Pillow."""
+    try:
+        return ImageFont.truetype(BOLD_FONT, size)
+    except OSError:
+        return ImageFont.load_default(size=size)
+
+
 def fmt(value: float, digits: int = 2) -> str:
     """Número con coma decimal y punto de miles, como en español."""
     text = f"{value:,.{digits}f}"
@@ -32,8 +40,8 @@ def label_photo(photo: bytes, lines: list) -> bytes:
     with Image.open(io.BytesIO(photo)) as image:
         image = image.convert("RGB")
         width, _ = image.size
-        small = ImageFont.truetype(BOLD_FONT, max(14, width // 20))
-        big = ImageFont.truetype(BOLD_FONT, max(22, width // 9))
+        small = bold_font(max(14, width // 20))
+        big = bold_font(max(22, width // 9))
         fonts = [small] + [big] * (len(lines) - 1)
         draw = ImageDraw.Draw(image, "RGBA")
         pad = max(6, width // 40)
