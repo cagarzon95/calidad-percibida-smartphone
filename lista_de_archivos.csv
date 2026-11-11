@@ -44,3 +44,4 @@ src/extractor_caracteristicas.py,Cálculo de las características de cada imagen
 src/preparar_datos.py,Genera las tablas de datos de la aplicación,0.00,88e51f5c5e159187ac6458d95d7444f57fb881f079d9d6e64211621d5d84bab5,sí
 notebooks/SPAQ_FASE3_COMPACTO_EJECUTADO.ipynb,"Cuaderno del análisis, ejecutado, sin rutas personales",3.51,964f028841cbe28fc41aeb9a9dd5b0d1cd182700eb8bc27f98b08ec7dbb09efc,sí
 notebooks/README.md,Explicación del cuaderno y cómo reejecutarlo,0.00,9879be0dca380764b4bb89cb37f85c3e72137ad2c1d566bf32c709104785784a,sí
+docs/informe_final.pdf,Informe final del análisis,3.96,df35b220320a625dc56ee0a1c7407f6fd5e034e7409b54927457b14a4b06f45b,sí
