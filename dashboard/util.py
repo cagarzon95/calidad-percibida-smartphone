@@ -1,5 +1,6 @@
 """Funciones pequeñas de apoyo: formato de números, miniaturas y etiquetas sobre las fotos."""
 import io
+from pathlib import Path
 
 import pandas as pd
 import streamlit as st
@@ -8,15 +9,12 @@ from PIL import Image, ImageDraw, ImageFont, ImageOps
 from extractor_caracteristicas import PREDICTORS
 from textos import FEATURE_LABEL
 
-BOLD_FONT = "C:/Windows/Fonts/arialbd.ttf"
+BOLD_FONT = Path(__file__).resolve().parent / "assets" / "fuentes" / "DejaVuSans-Bold.ttf"
 
 
 def bold_font(size: int):
-    """Fuente en negrita de Windows si existe; si no, la fuente que trae Pillow."""
-    try:
-        return ImageFont.truetype(BOLD_FONT, size)
-    except OSError:
-        return ImageFont.load_default(size=size)
+    """Fuente en negrita incluida en el proyecto, con acentos del español."""
+    return ImageFont.truetype(str(BOLD_FONT), size)
 
 
 def fmt(value: float, digits: int = 2) -> str:
