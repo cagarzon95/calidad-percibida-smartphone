@@ -1,0 +1,17 @@
+# Datos brutos SPAQ: 11.125 JPEG y anotaciones no redistribuibles sin licencia verificada
+spaq/
+*.jpg
+*.jpeg
+*.png
+# Secretos y entorno
+.env
+.streamlit/secrets.toml
+__pycache__/
+.venv/
+# Subidas y EXIF personales
+uploads/
+*.exif
+
+
+# Excepción: miniaturas de ejemplo por escena (reducidas, con atribución)
+!dashboard/assets/escenas/*.jpg

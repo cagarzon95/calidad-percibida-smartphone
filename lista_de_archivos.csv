@@ -1,0 +1,44 @@
+﻿Archivo,Qué contiene,Tamaño (MB),Huella SHA-256,En el repositorio público
+.gitignore,Archivos que no se suben al repositorio,0.00,1c325c90ac09dd468b96c878f97a247c56a440607681230f9b727a1b65c882e8,sí
+.streamlit/config.toml,Configuración: tamaño máximo de subida de fotos (15 MB),0.00,c772bc73a98e3eeea9f19067f26a591f97f3f2299ff013c590be22e051a6d69f,sí
+LICENSE,Licencia MIT del código,0.00,f1c14763d926356e6a55f91f04cdc6946f7bbac605acde6d56d0b4c3d1faaa57,sí
+README.md,Presentación del proyecto y cómo ejecutarlo,0.00,e356814e3111a59f26e9481222e4d05c226c999ec6975f3c668931e67f8b4516,sí
+dashboard/app.py,Punto de entrada: menú y navegación,0.00,e609cd8ae6d37a7d14fa83e8103b85bcb54d52740ccc4ddc77d71b0d85c5c15d,sí
+dashboard/assets/escenas/animal.jpg,Foto reducida de ejemplo para una escena (atribución en la aplicación),0.05,747e433b440562d8ccf4d9dd0d0080e74f9cc6af8144fc68886e1560649ad27d,sí
+dashboard/assets/escenas/cityscape.jpg,Foto reducida de ejemplo para una escena (atribución en la aplicación),0.05,ce90f20e8e266c25a680fd65f735c6330998a1ea19c9aaabf464d283fd1053c9,sí
+dashboard/assets/escenas/human.jpg,Foto reducida de ejemplo para una escena (atribución en la aplicación),0.06,2022209e1916bba879f88a83f94d5c24df48c22b40653376f37637941e29a0e2,sí
+dashboard/assets/escenas/indoor_scene.jpg,Foto reducida de ejemplo para una escena (atribución en la aplicación),0.05,b015c8bc3f4f94168e0eb2a4b7d67a12a97c3fc6b52a2ca43771bab120a3db58,sí
+dashboard/assets/escenas/landscape.jpg,Foto reducida de ejemplo para una escena (atribución en la aplicación),0.04,d998057d73ae5bc3c4abca27aeaa031c786e278e14de975c987bb02e94acd216,sí
+dashboard/assets/escenas/night_scene.jpg,Foto reducida de ejemplo para una escena (atribución en la aplicación),0.03,340e277c7206a07a95cf6ee02ecaac8fb3d259cb81112a1b9616f133f1f189e8,sí
+dashboard/assets/escenas/others.jpg,Foto reducida de ejemplo para una escena (atribución en la aplicación),0.04,14a56958ca7c7d145eef54d1c95dec34d29f48380c136091c950f6880bd5762e,sí
+dashboard/assets/escenas/plant.jpg,Foto reducida de ejemplo para una escena (atribución en la aplicación),0.08,5fc99a4474c96b50536c05a11a4da3f5fc1c542f069aa03f5de00ed8686d4116,sí
+dashboard/assets/escenas/still_life.jpg,Foto reducida de ejemplo para una escena (atribución en la aplicación),0.05,faf828116bb6b22fd1a895e5456cde61e791fb5ff46b26c207ef00e2089ed398,sí
+dashboard/datos.py,Carga de tablas y modelos,0.00,a65260277bbf270f1fdb9decc89b25c04e8d1a338f549c12b3e392aaac4b64f8,sí
+dashboard/evaluar.py,Sección para evaluar fotos nuevas,0.00,8b1f01e23b2d7faf72de2d65b02df2c63d3b2ed32b8904d892e54fa254280c64,sí
+dashboard/explorar.py,Sección para explorar las fotos,0.01,2947af6e2a7b128ffacfb0ce79893d0a7aa24c9bc7eb6c2fcc3f713c101569e5,sí
+dashboard/grupos.py,Sección de grupos de fotos,0.00,01a4d7960f41ca4fb051c2efaa1c8eb42a034dc492caa7c74513bf5a7af3fea1,sí
+dashboard/inicio.py,Sección de inicio,0.01,8b18a60ae8caad6140f480a2a5f883425dfed3760d1dc0c6cd0e94b4d4635580,sí
+dashboard/modelo.py,Sección sobre qué tan bien predice el modelo,0.01,f8a94f1d967fc849802d16d3250ce5309c9eba529eb7bec5b281a2c448ca9f80,sí
+dashboard/textos.py,Nombres y textos que ve el usuario,0.00,0adee585fe4c1b7ae5c774efcea6051db04597259f160865c77ba99c8c85c5a8,sí
+dashboard/util.py,Funciones de apoyo,0.00,7228530092853449ee5dd330118bca37ec6216e8de9414ba450af459d6123503,sí
+data/README.md,Origen de los datos y su atribución,0.00,886694877081632f3da8cda37907d2f2718e222114613d93d0869de146f23583,sí
+data/processed/fotos.csv,"Una fila por foto: puntuación, escenas, datos de la cámara y características",4.70,50b3924eb2484612a8a4898ac489d69f38bdbcef46d26763e5b8f63254fa69f0,sí
+data/processed/grupos_entrenamiento.csv,Grupo y posición en el mapa de cada foto de entrenamiento,0.51,ab3705e7aa0f06be2b07a9ba4ea7ad2b561938d19e03411d8c3aee6b025f8e9a,sí
+data/processed/historial_red_neuronal.csv,Error por época de la red neuronal,0.01,7c20bfa6702df4fff693369c4bab6a9e702dbcd66e75192b90262538f9b3d56b,sí
+data/processed/importancia_caracteristicas.csv,Cuánto empeora el modelo al quitar cada característica,0.00,179dbff7aebf841eb4af206c4f5a74463a9703e2aa9d5b29efc15bb139479166,sí
+data/processed/metricas_escenas.csv,Aciertos del clasificador de escenas,0.00,7acc3dc97065fe7df371dfe8175ab119eb8c56af2e385240178c3de2e93e1fd3,sí
+data/processed/predicciones_validacion.csv,Puntuación real y estimada de cada foto de validación,0.10,e976ed1539bde0cc723a0c2b76adfefc40cd4abf8c9b36afb585a4408c8eaf15,sí
+data/processed/resumen_modelos.csv,Errores y aciertos de cada modelo,0.00,546201cd558a8b1c47b5bae4f1abea974212da31dbbf4ea5ce41c7851493e638,sí
+data/processed/seleccion_grupos.csv,Medidas para elegir el número de grupos,0.00,9b3d51389c2e75bdeef149ef730cf3233eb532b248de0c7f4a8119bf0feac739,sí
+docs/informe_1.pdf,Informe 1: planteamiento y análisis exploratorio,2.38,24d7b706da8c6c2476c57a5a4f16a874f13f802568c8f5e2eb70f276cc2e4de4,sí
+docs/informe_2.pdf,Informe 2: preparación de datos y modelo base,3.03,23a17049d8680f2d00f46bfafb1adfb0d018a5ff0bfcc91b46d3eb9caf7bc072,sí
+docs/informe_3.pdf,"Informe 3: modelos, clasificación y agrupación",5.41,d9c8f7b8a20e07e611f1e69a118bbeb02f077d4ad2d73921358f94d3b5b252e5,sí
+docs/notas_tecnicas.md,"Cómo se construyó la aplicación, cómo se comprobó y sus limitaciones",0.00,07142085a1e3c1223c19f7c5ce38ccef487e8cd737772cfd3caafc06a975359f,sí
+models/grupos_kmeans.joblib,Modelo de agrupación en tres grupos,0.03,35cb72c6cc958474258a4739656ee142cfefee979d7f79c1fa8e9fe4760fae6b,sí
+models/mapa_pca.joblib,Transformación al mapa de dos dimensiones,0.00,89d743019363d2975814558a735eee24486fa3397d7799644deda64eab09a812,sí
+models/modelo_escenas.joblib,Modelo que reconoce las escenas,3.09,99329af5be82c7b1317da14a3181b47f8ac57b23f5f42be8f530eb691f2c15b6,sí
+models/modelo_regresion.joblib,Modelo que estima la puntuación de calidad,50.66,1cde48a8b05c95d7c47a78f8b6ceaa1c2bbac351c34e22abbf7fc91a39fa9237,sí
+models/transformador_grupos.joblib,Transformación previa a la agrupación,0.00,31f6a16faee0b24515c844e5e2593aaf0ff4e13c3d99d16978cdfce13ea73bb9,sí
+requirements.txt,"Programas necesarios, con versiones exactas",0.00,3e8feb0054d79a24c0fab5a929c5825db8061ebce719886411331c9a0a14b9c2,sí
+src/extractor_caracteristicas.py,Cálculo de las características de cada imagen,0.01,aeb945908d96cb79bf37b8195a5a0c40fa62e6358292da75685b9c1a830fb665,sí
+src/preparar_datos.py,Genera las tablas de datos de la aplicación,0.00,88e51f5c5e159187ac6458d95d7444f57fb881f079d9d6e64211621d5d84bab5,sí
