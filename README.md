@@ -9,6 +9,10 @@ Aplicación que muestra cómo perciben las personas la calidad de una foto tomad
 - **Ver grupos de fotos:** agrupar las fotos según sus características, sin mirar la puntuación.
 - **Evaluar tus fotos:** subir fotos JPG y recibir una puntuación estimada.
 
+## Ver la aplicación
+
+En línea: https://calidad-percibida-smartphone-wzqgwtpvncpk9kzvefcb2m.streamlit.app
+
 ## Ver la aplicación en su computador
 
 Necesita Python 3.12. Desde la carpeta del proyecto:
